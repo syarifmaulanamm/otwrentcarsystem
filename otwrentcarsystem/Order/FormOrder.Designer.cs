@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.status = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnExport = new System.Windows.Forms.Button();
             this.btnReload = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.TextBox();
             this.DGVOrder = new System.Windows.Forms.DataGridView();
@@ -70,12 +71,23 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.BtnExport);
             this.panel2.Controls.Add(this.btnReload);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(522, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(262, 49);
             this.panel2.TabIndex = 4;
+            // 
+            // BtnExport
+            // 
+            this.BtnExport.Location = new System.Drawing.Point(51, 10);
+            this.BtnExport.Name = "BtnExport";
+            this.BtnExport.Size = new System.Drawing.Size(99, 31);
+            this.BtnExport.TabIndex = 4;
+            this.BtnExport.Text = "Export To Excel";
+            this.BtnExport.UseVisualStyleBackColor = true;
+            this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
             // 
             // btnReload
             // 
@@ -140,5 +152,6 @@
         private Button btnReload;
         private Panel panel2;
         private ComboBox status;
+        private Button BtnExport;
     }
 }

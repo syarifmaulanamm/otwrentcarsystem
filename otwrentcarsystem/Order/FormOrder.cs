@@ -250,5 +250,11 @@ namespace otwrentcarsystem.Order
                 loadFirstTime();
             }
         }
+
+        private void BtnExport_Click(object sender, EventArgs e)
+        {
+            ExportToExcel export = new();
+            export.ExportDataOrder();
+        }
     }
 }
